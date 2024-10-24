@@ -1,0 +1,189 @@
+/* Adicione este CSS ao contêiner pai do formulário */
+.login-page {
+    display: flex;
+    /* Habilita o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    min-height: 90vh;
+    /* Altura mínima da viewport */
+    /* Cor de fundo opcional */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-container input:focus {
+    border-color: #0084ff;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0084ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #252525;
+    box-shadow: #0084ff 0px 5px 15px;
+}
+
+.login-container .forgot-password {
+    display: block;
+    text-align: center;
+    /* Centraliza o texto */
+    margin: 10px 0;
+    font-size: 14px;
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.login-container .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-container .not-account {
+    text-align: center;
+    /* Centraliza o texto */
+    margin: 22px 0 0 0;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.login-container .not-account span a {
+    font-size: 15px;
+    color: #0084ff;
+}
+
+.login-container .not-account span a:hover {
+    text-decoration: underline;
+}
+
+.links-redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Espaço entre os ícones */
+    margin-top: 20px;
+    /* Margem superior */
+}
+
+.links-redes button {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    /* Torna o ícone redondo */
+    width: 50px;
+    /* Largura do botão */
+    height: 50px;
+    /* Altura do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.links-redes button:hover {
+    background-color: #f0f0f0;
+}
+
+.links-redes i {
+    font-size: 24px;
+    /* Tamanho do ícone */
+    color: #333;
+}
+
+/* Estilos para o campo de senha com ícone de olho */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+    /* Espaço para o ícone */
+}
+
+.password-container i {
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.password-container i:hover {
+    color: #0084ff;
+}
+
+.reset-password-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .reset-password-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .reset-password-container button {
+    padding: 10px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .reset-password-container button:hover {
+    background-color: #252525;
+    color: #0084ff;
+  }  
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+    }
+}

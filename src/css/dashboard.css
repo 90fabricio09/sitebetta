@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffffee;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.custom-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; /* Garante que título e botões fiquem nos extremos */
+  padding: 20px 0;
+}
+
+.custom-sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaço entre os links */
+  flex-grow: 1; /* Permite que a lista de links ocupe o espaço disponível */
+  justify-content: center; /* Centraliza os links verticalmente entre o título e os botões */
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center; /* Centraliza ícones e texto verticalmente */
+}
+
+.sidebar-link a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.sidebar-link a:hover {
+  color: #0084ff;
+}
+
+.sidebar-link i {
+  font-size: 1.5rem;
+}
+
+.toggle-sidebar-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #0084ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 1100;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-sidebar-btn.open {
+  left: 270px;
+}
+
+.toggle-sidebar-btn:hover {
+  background-color: #252525;
+  box-shadow: #0084ff 0px 5px 15px;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.dashboard-content.sidebar-open {
+  margin-left: 250px;
+}
+
+.custom-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.custom-sidebar-content h2 {
+  font-size: 45px;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #0084ff;
+}
+
+.custom-sidebar-buttons {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.custom-home-button,
+.custom-logout-button {
+  background-color: #0084ff; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.custom-home-button:hover,
+.custom-logout-button:hover {
+  background-color: #252525;
+  box-shadow: #0084ff 0px 5px 15px;
+}
+
+.dashboard-home {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-home h1 {
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #0084ff;
+}
+
+.dashboard-home p {
+  font-size: 1.3rem;
+  color: #252525;
+}
+
+.imgdash {
+  margin: 20px;
+  max-width: 60%;
+  height: auto;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+/* Estilo global específico para a Agenda */
+.agenda-body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.agenda-calendar {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.react-calendar {
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.event-marker {
+  width: 6px;
+  height: 6px;
+  background-color: #0084ff;
+  border-radius: 50%;
+  margin: 2px auto;
+}
+
+/* Container principal */
+.agenda-container {
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.agenda-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+.agenda-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Input e Textarea */
+.agenda-form input, 
+.agenda-form textarea {
+  max-width: 760px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilo do DatePicker */
+.agenda-form .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.agenda-form .react-datepicker__input-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: white;
+  pointer-events: auto; /* Garante que o DatePicker continue funcional */
+}
+
+/* Botão */
+.agenda-form button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.agenda-form button:hover {
+  background-color: #252525;
+  box-shadow: #0084ff 0px 5px 15px;
+}
+
+.agenda-delete-btn {
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.agenda-delete-btn:hover {
+  background-color: #252525;
+  box-shadow: #0084ff 0px 5px 15px;
+}
+
+/* Lista de Eventos */
+.agenda-event-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.agenda-event-list li {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-event-list h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.agenda-event-list p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .agenda-container {
+    margin: 10px;
+    margin-top: 70px;
+    padding: 15px;
+  }
+
+  .agenda-container h2 {
+    font-size: 24px;
+  }
+
+  .agenda-form input, 
+  .agenda-form textarea, 
+  .agenda-form button {
+    font-size: 16px;
+  }
+
+  .agenda-event-list h3 {
+    font-size: 18px;
+  }
+
+  .agenda-event-list p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agenda-form button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .agenda-container h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-content {
+    margin-top: 40px;
+  }
+
+  .dashboard-content.sidebar-open {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .toggle-sidebar-btn.open {
+    left: calc(100% - 60px);
+  }
+
+  .imgdash {
+    margin: 10px;
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 710px) {
+  .custom-sidebar-content {
+    padding: 10px;
+  }
+
+  .sidebar-link a {
+    font-size: 1rem;
+  }
+
+  .dashboard-content {
+    margin-top: 40px;
+  }
+
+  .dashboard-content.sidebar-open {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .toggle-sidebar-btn.open {
+    left: calc(100% - 60px);
+  }
+
+  .imgdash {
+    margin: 10px;
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+  }
+}
