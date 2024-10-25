@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import ImgSup from '../assets/image-light.png'
 import ImgSupBlue from '../assets/image.png'
 
@@ -50,11 +51,11 @@ function Ticket() {
                             </a>
                         </div>
                         <div className="content-sup">
-                            <a href="/chat">
+                            <NavLink to="/chat">
                                 <h3>Fale com a Bettina</h3>
                                 <p>Fale com a IA da Betta.</p>
                                 <img className="sup-icon" src={ImgSupBlue} alt="Logo Betta" />
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                     <p>Caso necessite de assistência, sinta-se à vontade para interagir com uma das opções disponíveis acima. Estamos à sua disposição.</p>
