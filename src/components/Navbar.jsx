@@ -51,11 +51,6 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/chat" className="active">
-              Chat IA
-            </NavLink>
-          </li>
-          <li>
             <a href="https://wa.me/5511937350748" className="action_btn">
               Contato
             </a>

@@ -32,7 +32,7 @@ function Footer() {
               <a href="https://wa.me/5511937350748" className="footer-link" id="whatsapp">
                 <i className="bi bi-whatsapp"></i>
               </a>
-              <a href="https://www.instagram.com/bettarello_comercial/" className="footer-link" id="instagram">
+              <a href="https://www.instagram.com/bettarello_fabricio/" className="footer-link" id="instagram">
                 <i className="bi bi-instagram"></i>
               </a>
               <a href="https://discord.gg/Ur2ttFuNaM" className="footer-link" id="discord">
@@ -48,7 +48,7 @@ function Footer() {
               <a href="https://wa.me/5511937350748" className="footer-link">Whatsapp</a>
             </li>
             <li>
-              <a href="https://www.instagram.com/bettarello_comercial/" className="footer-link">Instagram</a>
+              <a href="https://www.instagram.com/bettarello_fabricio/" className="footer-link">Instagram</a>
             </li>
             <li>
               <a href="https://discord.gg/Ur2ttFuNaM" className="footer-link">Discord</a>

@@ -2,7 +2,7 @@ function Infos() {
     return (
         <>
             <section className="container" id="infos">
-                <h2>Informações sobre a Betta Agency</h2>
+                <h2>Informações sobre a Betta Brasil</h2>
                 <div className="every_infos">
                     <div className="infos">
                         <i className="bi bi-person-check"></i>

@@ -51,7 +51,7 @@ function Ticket() {
                             </a>
                         </div>
                         <div className="content-sup">
-                            <a href="https://www.instagram.com/bettarello_comercial/" target="_blank">
+                            <a href="https://www.instagram.com/bettarello_fabricio/" target="_blank">
                                 <h3>Nosso Instagram</h3>
                                 <p>Venha nos conhecer mais de perto.</p>
                                 <i className="bi bi-instagram"></i>
