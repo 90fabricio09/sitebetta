@@ -37,6 +37,13 @@ function Ticket() {
                     <h2>Olá<span>!</span> Como podemos te ajudar<span>?</span></h2>
                     <div className="global-content">
                         <div className="content-sup">
+                            <NavLink to="/chat">
+                                <h3>Fale com a Bettina</h3>
+                                <p>Fale com a IA da Betta.</p>
+                                <img className="sup-icon" src={ImgSupBlue} alt="Logo Betta" />
+                            </NavLink>
+                        </div>
+                        <div className="content-sup">
                             <a href="https://wa.me/5511937350748" target="_blank">
                                 <h3>Contato via WhatsApp</h3>
                                 <p>Normalmente respondemos em até 10 min.</p>
@@ -49,13 +56,6 @@ function Ticket() {
                                 <p>Venha nos conhecer mais de perto.</p>
                                 <i className="bi bi-instagram"></i>
                             </a>
-                        </div>
-                        <div className="content-sup">
-                            <NavLink to="/chat">
-                                <h3>Fale com a Bettina</h3>
-                                <p>Fale com a IA da Betta.</p>
-                                <img className="sup-icon" src={ImgSupBlue} alt="Logo Betta" />
-                            </NavLink>
                         </div>
                     </div>
                     <p>Caso necessite de assistência, sinta-se à vontade para interagir com uma das opções disponíveis acima. Estamos à sua disposição.</p>
