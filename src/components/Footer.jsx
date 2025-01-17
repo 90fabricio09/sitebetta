@@ -29,7 +29,7 @@ function Footer() {
             <a href="/"><img src={Logo} alt="Betta Logo" /></a>
             <p>Transformando sua ideia em realidade!</p>
             <div id="footer_social_media">
-              <a href="https://wa.me/5511937350748" className="footer-link" id="whatsapp">
+              <a href="https://wa.me/5511931501833" className="footer-link" id="whatsapp">
                 <i className="bi bi-whatsapp"></i>
               </a>
               <a href="https://www.instagram.com/bettarello_fabricio/" className="footer-link" id="instagram">
@@ -45,7 +45,7 @@ function Footer() {
               <h3>Contato</h3>
             </li>
             <li>
-              <a href="https://wa.me/5511937350748" className="footer-link">Whatsapp</a>
+              <a href="https://wa.me/5511931501833" className="footer-link">Whatsapp</a>
             </li>
             <li>
               <a href="https://www.instagram.com/bettarello_fabricio/" className="footer-link">Instagram</a>
