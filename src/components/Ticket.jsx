@@ -44,7 +44,7 @@ function Ticket() {
                             </NavLink>
                         </div>
                         <div className="content-sup">
-                            <a href="https://wa.me/5511937350748" target="_blank">
+                            <a href="https://wa.me/5511931501833" target="_blank">
                                 <h3>Contato via WhatsApp</h3>
                                 <p>Normalmente respondemos em até 10 min.</p>
                                 <i className="bi bi-whatsapp"></i>
