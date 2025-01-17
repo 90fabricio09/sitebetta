@@ -31,7 +31,7 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <a href="https://wa.me/5511937350748" className="action_btn">
+          <a href="https://wa.me/5511931501833" className="action_btn">
             Contato
           </a>
           <div className="toggle_btn" onClick={toggleMenu}>
@@ -51,7 +51,7 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <a href="https://wa.me/5511937350748" className="action_btn">
+            <a href="https://wa.me/5511931501833" className="action_btn">
               Contato
             </a>
           </li>
