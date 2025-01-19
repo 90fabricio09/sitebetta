@@ -15,20 +15,20 @@ function Navbar() {
         <br />
         <div className="navbar">
           <div className="logo">
-            <NavLink to="/">
+            <a href="/">
               <img src={Logo} alt="Betta Logo" />
-            </NavLink>
+            </a>
           </div>
           <ul className="links">
             <li>
-              <NavLink to="/" className="active">
+              <a href="/" className="active">
                 Home
-              </NavLink>
+              </a >
             </li>
             <li>
-              <NavLink to="/sobre" className="active">
+              <a href="/sobre" className="active">
                 Saiba mais
-              </NavLink>
+              </a >
             </li>
           </ul>
           <a href="https://wa.me/5511931501833" className="action_btn">
@@ -41,14 +41,14 @@ function Navbar() {
 
         <div className={`dropdown_menu ${isOpen ? 'open' : ''}`}>
           <li>
-            <NavLink to="/" className="active">
+            <a href="/" className="active">
               Home
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink to="/sobre" className="active">
+            <a href="/sobre" className="active">
               Saiba mais
-            </NavLink>
+            </a>
           </li>
           <li>
             <a href="https://wa.me/5511931501833" className="action_btn">

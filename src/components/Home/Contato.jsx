@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import ImageContact from '../../assets/contact-us-animate.svg';
 
 function Contato() {

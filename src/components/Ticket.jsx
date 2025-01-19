@@ -37,11 +37,11 @@ function Ticket() {
                     <h2>Olá<span>!</span> Como podemos te ajudar<span>?</span></h2>
                     <div className="global-content">
                         <div className="content-sup">
-                            <NavLink to="/chat">
+                            <a href="/chat">
                                 <h3>Fale com a Bettina</h3>
                                 <p>Fale com a IA da Betta.</p>
                                 <img className="sup-icon" src={ImgSupBlue} alt="Logo Betta" />
-                            </NavLink>
+                            </a>
                         </div>
                         <div className="content-sup">
                             <a href="https://wa.me/5511931501833" target="_blank">

@@ -59,19 +59,19 @@ function Footer() {
               <h3>Páginas</h3>
             </li>
             <li>
-            <NavLink to="/" className="footer-link">
+            <a href="/" className="footer-link">
             Home
-            </NavLink>
+            </a>
             </li>
             <li>
-            <NavLink to="/sobre" className="footer-link">
+            <a href="/sobre" className="footer-link">
             Saiba mais
-            </NavLink>
+            </a>
             </li>
             <li>
-            <NavLink to="/chat" className="footer-link">
+            <a href="/chat" className="footer-link">
             Betta IA
-            </NavLink>
+            </a>
             </li>
           </ul>
           <div id="footer_subscribe">
